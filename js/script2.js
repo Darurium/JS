@@ -1,15 +1,21 @@
 'use strict';
 
-let obj = {
-    a: 5,
-    b: 1
+const soldier = {
+    healf: 400,
+    armor: 100,
+    sayHello: function() {
+        console.log('Hello');
+    }
 };
 
-function copy(mainObj) {
-    let objCopy = {};
-    let key;
-    for (key in mainObj) {
-        objCopy[key] = mainObj[key];
-    }
-    return objCopy;
-}
+// const jonh = {
+//     healf: 100
+// };
+
+const jonh = Object.create(soldier);
+
+// jonh.__proto__ = soldier;
+
+Object.setPrototypeOf(jonh, soldier);
+
+jonh.sayHello();
