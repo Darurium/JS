@@ -3,7 +3,7 @@
 let obj = {
     a: 5,
     b: 1
-}
+};
 
 function copy(mainObj) {
     let objCopy = {};
