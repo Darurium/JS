@@ -1,21 +1,21 @@
-'use strict';
+// 'use strict';
 
-const soldier = {
-    healf: 400,
-    armor: 100,
-    sayHello: function() {
-        console.log('Hello');
-    }
-};
-
-// const jonh = {
-//     healf: 100
+// const soldier = {
+//     healf: 400,
+//     armor: 100,
+//     sayHello: function() {
+//         console.log('Hello');
+//     }
 // };
 
-const jonh = Object.create(soldier);
+// // const jonh = {
+// //     healf: 100
+// // };
 
-// jonh.__proto__ = soldier;
+// const jonh = Object.create(soldier);
 
-Object.setPrototypeOf(jonh, soldier);
+// // jonh.__proto__ = soldier;
 
-jonh.sayHello();
+// Object.setPrototypeOf(jonh, soldier);
+
+// jonh.sayHello();
